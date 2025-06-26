@@ -3,8 +3,8 @@ import 'package:equatable/equatable.dart';
 
 import 'package:tutorial_1/Core/Error/failures.dart';
 import 'package:tutorial_1/Core/UseCases/usecase.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Domain/Entities/number_trivia.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Domain/Repositories/number_trivia_repository.dart';
+import 'package:tutorial_1/NumberTrivia/Domain/Entities/number_trivia.dart';
+import 'package:tutorial_1/NumberTrivia/Domain/Repositories/number_trivia_repository.dart';
 
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;

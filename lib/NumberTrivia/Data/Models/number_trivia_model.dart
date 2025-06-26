@@ -1,4 +1,4 @@
-import 'package:tutorial_1/Features/NumberTrivia/Domain/Entities/number_trivia.dart';
+import 'package:tutorial_1/NumberTrivia/Domain/Entities/number_trivia.dart';
 
 class NumberTriviaModel extends NumberTrivia {
   // ignore: use_super_parameters

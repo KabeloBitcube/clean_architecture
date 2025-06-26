@@ -4,10 +4,10 @@ import 'package:tutorial_1/Core/Error/exceptions.dart';
 
 import 'package:tutorial_1/Core/Error/failures.dart';
 import 'package:tutorial_1/Core/Network/network_info.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Data/DataSources/number_trivia_local_data_source.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Data/DataSources/number_trivia_remote_data_source.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Domain/Entities/number_trivia.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Domain/Repositories/number_trivia_repository.dart';
+import 'package:tutorial_1/NumberTrivia/Data/DataSources/number_trivia_local_data_source.dart';
+import 'package:tutorial_1/NumberTrivia/Data/DataSources/number_trivia_remote_data_source.dart';
+import 'package:tutorial_1/NumberTrivia/Domain/Entities/number_trivia.dart';
+import 'package:tutorial_1/NumberTrivia/Domain/Repositories/number_trivia_repository.dart';
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
   final NumberTriviaRemoteDataSource remoteDataSource;

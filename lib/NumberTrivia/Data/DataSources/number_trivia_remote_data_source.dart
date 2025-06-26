@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:tutorial_1/Core/Error/exceptions.dart';
-import 'package:tutorial_1/Features/NumberTrivia/Data/Models/number_trivia_model.dart';
+import 'package:tutorial_1/NumberTrivia/Data/Models/number_trivia_model.dart';
 
 abstract class NumberTriviaRemoteDataSource {
   Future<NumberTriviaModel> getConcreteNumberTrivia(int number);
