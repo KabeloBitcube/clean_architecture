@@ -1,0 +1,31 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:dartz/dartz.dart';
+
+import 'package:tutorial_1/Core/Error/failures.dart';
+import 'package:tutorial_1/Core/Platform/network_info.dart';
+import 'package:tutorial_1/Features/NumberTrivia/Data/DataSources/number_trivia_local_data_source.dart';
+import 'package:tutorial_1/Features/NumberTrivia/Data/DataSources/number_trivia_remote_data_source.dart';
+import 'package:tutorial_1/Features/NumberTrivia/Domain/Entities/number_trivia.dart';
+import 'package:tutorial_1/Features/NumberTrivia/Domain/Repositories/number_trivia_repository.dart';
+
+class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
+  final NumberTriviaRemoteDataSource remoteDataSource;
+  final NumberTriviaLocalDataSource localDataSource;
+  final NetworkInfo networkInfo;
+  
+  NumberTriviaRepositoryImpl({
+    required this.remoteDataSource,
+    required this.localDataSource,
+    required this.networkInfo,
+  });
+
+  @override
+  Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<Failure, NumberTrivia>> getRandomNumberTrivia() {
+    throw UnimplementedError();
+  }
+}
