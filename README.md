@@ -1,4 +1,4 @@
-# tutorial_1
+# Clean architecture tutorial
 
 A new Flutter project.
 
