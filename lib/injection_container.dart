@@ -12,13 +12,13 @@ import 'package:tutorial_1/NumberTrivia/Domain/UseCases/get_random_number_trivia
 import 'package:tutorial_1/NumberTrivia/Presentation/bloc/number_trivia_bloc.dart';
 import 'package:http/http.dart' as http;
 
-final serviceLocator = GetIt.instance;
+GetIt serviceLocator = GetIt.instance;
 
 Future<void> init() async {
   // Number Trivia
   serviceLocator.registerFactory(
-    () =>
-        NumberTriviaBloc(serviceLocator(), serviceLocator(), serviceLocator()),
+    // Keeps throwing "Bad state: GetIt: Object/factory with type is not registered inside GetIt."
+    () => NumberTriviaBloc (serviceLocator.get<GetConcreteNumberTrivia>(), serviceLocator.get<GetRandomNumberTrivia>(), serviceLocator.get<InputConverter>()),
   );
 
   serviceLocator.registerLazySingleton(
